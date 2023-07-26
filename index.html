@@ -38,9 +38,10 @@
 
 <body>
     <header class="font-lato container mx-auto mt-4 mb-9 rounded-full md:bg-[#F85559] lg:bg-[#F85559]">
-        <div class="navbar   gap-40">
-            <div class="">
-                <div class="dropdown">
+        <nav >
+
+            <div class="navbar  text-3xl text-black rounded-full sm:px-6 py-4 flex-row-reverse lg:flex-row justify-between items-center mx-auto">
+                <div class="w-auto dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -48,78 +49,48 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li tabindex="0">
-                        <li>
-                            <a class="font-bold">Home </a>
+                    <div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] pr-2 shadow bg-base-100 rounded-box ">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruit</a></li>
 
-                        </li>
-                        </li>
-                        <li tabindex="0">
-                        <li>
-                            <a>About Us </a>
+                        </ul>
 
-                        </li>
-                        </li>
-                        <li tabindex="0">
-                        <li>
-                            <a>Shop</a>
+                    </div>
+                </div>
 
-                        </li>
-                        </li>
-                        <li tabindex="0">
-                        <li>
-                            <a>All fruits</a>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruit</a></li>
 
-                        </li>
-                        </li>
                     </ul>
                 </div>
-
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="font-extrabold">Home</a></li>
-                    <li tabindex="0">
-                    <li>
-                        <a class="font-extrabold">About Us</a>
-
-                    </li>
-                    </li>
-                    <li tabindex="0">
-                    <li>
-                        <a class="font-extrabold">Shop</a>
-
-                    </li>
-                    </li>
-                    <li tabindex="0">
-                    <li>
-                        <a class="font-extrabold">All fruits</a>
-
-                    </li>
-                    </li>
-                    <li tabindex="0">
-
-                </ul>
-            </div>
-            <a class=" normal-case text-xl ml-20 font-extrabold"><img src="images/logo.png" alt="">Fruit Burst</a>
-            <div>
-                <div class=" xl:mx-20  ">
-                    <input class="input input-bordered w-24 md:w-auto rounded-full " type="text" placeholder="Search here"
-                    
-                    svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M18.9998 19L13.8028 13.803M13.8028 13.803C15.2094 12.3965 15.9996 10.4887 15.9996 8.49955C15.9996 6.51035 15.2094 4.60262 13.8028 3.19605C12.3962 1.78947 10.4885 0.999268 8.49931 0.999268C6.51011 0.999268 4.60238 1.78947 3.19581 3.19605C1.78923 4.60262 0.999023 6.51035 0.999023 8.49955C0.999023 10.4887 1.78923 12.3965 3.19581 13.803C4.60238 15.2096 6.51011 15.9998 8.49931 15.9998C10.4885 15.9998 12.3962 15.2096 13.8028 13.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-
+                <div>
+                    <div class="flex justify-center items-center text-center">
+                        <img class="w-10" src="images/logo.png" alt="logo" />
+                        <h2 class="text-xl xl:text-2xl font-bold pl-2">Fruit Burst</h2>
+                    </div>
                 </div>
+                <div class="hidden lg:flex justify-center">
+                    <div class="bg-white rounded-full">
+                        <input class="input  rounded-l-full border-0 w-[270px]" placeholder="Search here" />
+                        <button class="btn  rounded-r-full bg-white border-0">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
             </div>
-
-
-        </div>
-
-
+        </nav>
 
     </header>
 
@@ -506,96 +477,103 @@
 
         <!-- shop all button -->
 
-        <button class=" mx-32 border-none btn btn-primary bg-[#F85559] text-white mt-7 lg:mx-auto md:mx-[330px] xl:ml-[720px]">Shop All</button>
+        <button
+            class=" mx-32 border-none btn btn-primary bg-[#F85559] text-white mt-7 lg:mx-auto md:mx-[330px] xl:ml-[720px]">Shop
+            All</button>
 
         <!-- meet my team -->
 
-        <section class="mt-32 max-w-screen-xl mx-auto px-4 md:px-12 lg:px-16">
+        <section class="pt-10 mx-auto px-4 md:px-12 lg:px-16">
 
-            <div class="hero h-screen rounded-lg" style="background-image: url(images/team.png);">
+            <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center rounded-lg text-neutral-content ">
-                    <div class="space-y-3 text-center text-white font-lato px-5 pt-10 md:px-20 lg:px-60">
-                    <h1 class="text-2xl md:text-4xl font-extrabold">
-                      Deal of the day
-                    </h1>
-                    <p class="text-sm lg:text-base font-medium">
-                      Contrary to popular belief, is not simply random text. It has
-                      roots in a piece of classical Latin literature from 45 BC,
-                      making it over 2000 years old.
-                    </p>
-                  </div>
+
+                <div>
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-md">
+                            <h1 class="text-2xl md:text-4xl font-extrabold">Meet the team section</h1>
+                            <p class="text-sm lg:text-base font-medium">Contrary to popular belief, is not simply random
+                                text. It has roots in a
+                                piece
+                                of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <!-- team -->
+                    <div class="justify-center grid md:grid-cols-2  lg:grid-cols-4 lg:mr-16  mt-auto text-white">
+                        <!-- member1 -->
+                        <div class="card w-auto  ">
+                            <figure class=" px-10 pt-1">
+                                <img src="images/member1.png" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Awlad Hossain</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #f7cecf;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- member2 -->
+                        <div class="card w-auto ">
+                            <figure class="px-10 pt-1">
+                                <img src="images/member2.png" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Safia Chowdhury</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #f7cecf;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- member3 -->
+
+
+                        <div class="card w-auto">
+                            <figure class="px-10 pt-1">
+                                <img src="images/member3.png" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Rokib Hossain</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #f7cecf;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- member4 -->
+                        <div class="card w-auto">
+                            <figure class="px-10 pt-1">
+                                <img src="images/member4.png" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Chaity</h2>
+                                <p>Fruits Expert</p>
+                                <div class="card-actions">
+                                    <i class="fa-brands fa-facebook" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #f7cecf;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #f7cecf;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- team picture -->
-
-                <div class="justify-center grid md:grid-cols-2  lg:grid-cols-4 lg:mr-16  mt-auto text-white">
-                    <!-- member1 -->
-                    <div class="card w-96  ">
-                        <figure class="px-10 pt-10">
-                            <img src="images/member1.png" alt="" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Awlad Hossain</h2>
-                            <p>Fruits Expert</p>
-                            <div class="card-actions">
-                                <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- member2 -->
-                    <div class="card w-96  ">
-                        <figure class="px-10 pt-10">
-                            <img src="images/member2.png" alt="" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Safia Chowdhury</h2>
-                            <p>Fruits Expert</p>
-                            <div class="card-actions">
-                                <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- member3 -->
-                    <div class="card w-96">
-                        <figure class="px-10 pt-10">
-                            <img src="images/member3.png" alt="" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Rokib Hossain</h2>
-                            <p>Fruits Expert</p>
-                            <div class="card-actions">
-                                <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- member4 -->
-                    <div class="card w-96">
-                        <figure class="px-10 pt-10">
-                            <img src="images/member4.png" alt="" class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Chaity</h2>
-                            <p>Fruits Expert</p>
-                            <div class="card-actions">
-                                <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
-                                <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+            </div>
 
         </section>
+
 
 
 
@@ -604,7 +582,8 @@
     <footer class=" mx-auto">
         <section class="footer footer-center bg-black px-4 md:px-12 lg:px-16 mt-20 py-10">
             <div class=" ">
-                <a class=" flex items-center normal-case text-xl  font-extrabold text-white"><img src="images/logo.png" alt="">Fruit Burst</a>
+                <a class=" flex items-center normal-case text-xl  font-extrabold text-white"><img src="images/logo.png"
+                        alt="">Fruit Burst</a>
             </div>
             <div class="flex flex-wrap justify-center gap-10 text-white px-10">
                 <a class="link link-hover">Home</a>
@@ -621,9 +600,9 @@
 
             </div>
 
-            
-                <p class="text-white">&copy 2020-2023, Folkino.com. All rights reserved. </p>
-            
+
+            <p class="text-white">&copy 2020-2023, Folkino.com. All rights reserved. </p>
+
         </section>
     </footer>
 
